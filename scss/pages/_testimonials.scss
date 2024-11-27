@@ -1,0 +1,11 @@
+@use "../global/responsive-design" as *;
+
+.edit-section {
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+  @include screen("small") {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  @include screen("medium") {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}

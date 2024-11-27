@@ -1,0 +1,22 @@
+@use "../global/responsive-design" as *;
+
+.policy {
+  .policy-content {
+    padding: 50px 0;
+    font-size: 18px;
+    .policy-pra {
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    .policy-list {
+      width: 50%;
+      text-align: justify;
+      @include screen("small") {
+        width: 75%;
+      }
+    }
+  }
+}
